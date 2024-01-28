@@ -1,0 +1,99 @@
+Task 1: 
+
+NORMAL          1655
+SUSPECT          295
+PATHOLOGICAL     176
+Name: fetal_health, dtype: int64 
+
+X_train.shape  X_test.shape y_train.shape y_test.shape
+(1488, 21) 	 (638, 21) 	 (1488,) 	 (638,)
+-------------------------------------------------------------------------------------------------------------
+
+Task 2: 
+
+Features with more that 0.90 correlation:  {'histogram_median'} 
+
+Features with more that 0.95 correlation:  set() 
+
+Top 10 Features 
+
+Features                                                Correlation Value                                       
+histogram_median                                        0.9471996491756945                                      
+histogram_min                                           0.8984761499832566                                      
+histogram_mean                                          0.8918357649563649                                      
+histogram_number_of_peaks                               0.5157648192358156                                      
+percentage_of_time_with_abnormal_long_term_variability  0.46254498411960965                                     
+mean_value_of_short_term_variability                    0.4216592170716675                                      
+histogram_number_of_zeroes                              0.311513901530074                                       
+histogram_max                                           0.30237764259870076                                     
+light_decelerations                                     0.28017853000618187                                     
+histogram_variance                                      0.2604649229796731                                      
+-------------------------------------------------------------------------------------------------------------
+
+Task 3: 
+
+Gaussian NB Report: 
+
+              precision    recall  f1-score   support
+
+      NORMAL       0.82      0.97      0.89       421
+PATHOLOGICAL       0.66      0.60      0.63        58
+     SUSPECT       0.80      0.44      0.57       159
+
+    accuracy                           0.80       638
+   macro avg       0.76      0.67      0.69       638
+weighted avg       0.80      0.80      0.78       638
+
+-------------------------------------------------------------------------------------------------------------
+
+Decision Tree Classifier Report: 
+
+              precision    recall  f1-score   support
+
+      NORMAL       0.96      0.95      0.95       502
+PATHOLOGICAL       0.96      0.93      0.94        55
+     SUSPECT       0.70      0.77      0.73        81
+
+    accuracy                           0.92       638
+   macro avg       0.88      0.88      0.88       638
+weighted avg       0.93      0.92      0.93       638
+
+-------------------------------------------------------------------------------------------------------------
+
+Task 4: 
+
+Gaussian NB Confusion Matrix:
+
+[[407  18  72]
+ [  1  35  17]
+ [ 13   5  70]] 
+
+-------------------------------------------------------------------------------------------------------------
+
+Decision Tree Classifier Confusion Matrix:
+
+[[477   1  19]
+ [  2  51   0]
+ [ 23   3  62]] 
+
+-------------------------------------------------------------------------------------------------------------
+
+Task 5: 
+
+Gaussian NB
+F1 Score 0.821311841755954
+-------------------------------------------------------------------------------------------------------------
+
+Decision Tree Classifier
+F1 Score 0.9235677359019535
+-------------------------------------------------------------------------------------------------------------
+
+Task 6: 
+
+[3 1 1 ... 4 4 0]
+[2 3 3 ... 0 0 1]
+[ 0 12 12 ...  6  6  1]
+-------------------------------------------------------------------------------------------------------------
+
+
+Process finished with exit code 0
